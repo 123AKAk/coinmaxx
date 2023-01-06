@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/images/coinmaxxlogo.png" type="image/ico" />
+    <title>CoinMaxx|Market Capitalizations</title>
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link href="assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/plugins/dataTables/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="assets/fonts/cryptocoins.css" rel="stylesheet">
+    <!-- CSS -->
+    <!-- Simple line icons -->
+    <link href="assets/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Font awesome icons -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome-animation.min.css" rel="stylesheet">
+    <!-- Charts -->
+    <link href="assets/plugins/rickshaw/rickshaw.min.css" rel="stylesheet">
+    <!-- Custom Style -->
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/media.css" rel="stylesheet">
+    <link id="ui-current-skin" href="assets/css/skin-colors/skin-yellow.css" rel="stylesheet">
+    <!-- Custom Font -->
+    <link rel='stylesheet' type='text/css' media='all' href='https://fonts.googleapis.com/css?family=Montserrat%7CMontserrat%3Aregular%2C700%2Clatin'/>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/617fea0a86aee40a57395bc3/1fjdqkhr8';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+  </head>
+  <body class="nav-sm preloader-off developer-mode">
+    <div class="container body">
+      <div class="pace-cover"></div>
+      <div id="st-container" class="st-container st-effect">
+        <div class="main_container">
+          <!-- LEFT PRIMARY NAVIGATION -->
+          <div class="col-md-3 left_col">
+            <div class="scroll-view">
+              <div class="navbar nav_title">
+                <h1 class="logo_wrapper">
+                  <a href="dashboard-v2.html" class="site_logo">
+                    <img class="logo" src="assets/images/coinmaxxlogo.png" alt="cryptic logo">
+                    <span class="logo-text">CoinMaxx</span>
+                  </a>
+                </h1>
+              </div>
+              <div class="clearfix"></div>
+              <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                <div class="menu_section">
+                  <div class="clearfix"></div>
+                  <ul class="nav side-menu">
+                    <li>
+                      <a href="dashboard-v2.html"><i class="icon-home icons"></i> <span>Home</span></a>
+             
+                    </li>
+                   
+                      
+                    </li>
+                   
+                    
+                  </ul>
+                </div>
+                
+                <div class="menu_section">
+                  <h3>Finance</h3>
+                  <ul class="nav side-menu">
+                    
+                    <li><a><i class="icon-grid icons"></i> <span>Investment Plans</span><span class="fa fa-angle-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="pricing-tables-v1.html"><span>Mining</span></a></li>
+                        <li><a href="pricing-tables-v2.html"><span>Trading</span></a></li>
+                      </ul>
+                    </li>
+                    <li><a href="exchange.html"><i class="icon-refresh icons"></i> <span>Withdraw</span></a></li>
+                   
+                    <li><a><i class="icon-chart icons"></i> <span>Financial Reports </span><span class="fa fa-angle-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="tables.transactions.html"><span>Mining Transactions</span></a></li>
+                        <li><a href="tables.market-capitalizations.html"><span>Market Capitalizations</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="menu_section">
+                  <h3>Personal</h3>
+                  <ul class="nav side-menu">
+                    <li><a href="member-profile.html"><i class="icon-people icons"></i> <span>Profile</span></span></a></li>
+                    <!-- <li><a href="reset-password.html"><i class="icon-lock-open icons"></i> <span>Reset Password</span></a></li>
+                    <li><a href="confirm-mail.html"><i class="icon-lock-open icons"></i> <span>Confirm Registration Mail</span></a></li> -->
+                  </ul>
+                </div>
+              </div>
+              <!-- /sidebar menu -->
+              <!-- /menu footer buttons -->
+              <div class="sidebar-footer hidden-small">
+               
+                <a href="#" id="btnFullscreen">
+                  <span class="icon-size-fullscreen icons" aria-hidden="true"></span>
+                </a>
+               
+                <a href="logout.php">
+                  <span class="icon-power icons" aria-hidden="true"></span>
+                </a>
+              </div>
+              <!-- /menu footer buttons -->
+            </div>
+          </div>
+          <!-- TOP SECONDARY NAVIGATION -->
+          <div class="top_nav">
+            <div class="nav_menu">
+              <ul class="nav navbar-nav navbar-left">
+                <li class="toggle-li">
+                  <div class="nav toggle burger-nav">
+                    <a id="menu_toggle">
+                      <i class="fa fa-bars burger" aria-hidden="true"></i>
+                      <i class="fa fa-long-arrow-right arrow" aria-hidden="true"></i>
+                      <i class="fa fa-times close-menu" aria-hidden="true"></i>
+                      <i class="fa fa-times close-menu-1" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li class="active"><i class="fa fa-chevron-right" aria-hidden="true"></i> Dashboard</li>
+              </ul> <!-- top menu ul -->
+              <ul class="nav navbar-nav navbar-center">
+                
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/images/profile-pic.jpg" alt="">
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="member-profile.html"> Profile</a></li>
+                    <li><a href="logout.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- PAGE CONTENT -->
+          <div class="right_col table-market" role="main">
+            <div class="spacer_30"></div>
+            <div class="clearfix"></div>
+            <div class="chart-section1">
+              <div class="panel panel-violet table-market-capitalization no-margin">
+              <div class="panel-heading no-padding">
+                  <h3 class="no-margin">Cryptocurrency Market Capitalizations</h3>
+              </div>
+              <div class="panel-body no-padding">
+                <table class="table dataTable no-footer table-striped table-purple no-margin" id="dataTable_crypto" role="grid">
+                  <thead>
+                     <tr role="row">
+                        <th>Index <i class="fa fa-sort"></i></th>
+                        <th>Name <i class="fa fa-sort"></i></th>
+                        <th>Market Cap <i class="fa fa-sort"></i></th>
+                        <th>Price <i class="fa fa-sort"></i></th>
+                        <th>Volume <i class="fa fa-sort"></i></th>
+                        <th>Circulating <i class="fa fa-sort"></i></th>
+                        <th>Trade Size <i class="fa fa-sort"></i></th>
+                        <th>Change % <i class="fa fa-sort"></i></th>
+                     </tr>
+                  </thead>
+                   <tbody id="data">
+                    
+                    </tbody>
+                </table>
+              </div>
+              </div>
+            </div>
+            <a href="#" class="scrollToTop"><i class="fa fa-chevron-up text-white" aria-hidden="true"></i></a>
+          </div>
+          <!-- PAGE FOOTER -->
+          <!-- <footer>
+            <div class="pull-right">
+              Kryptunit - Admin Template by <a href="https://themeforest.net/user/modeltheme/portfolio">ModelTheme</a>
+            </div>
+            <div class="clearfix"></div>
+          </footer> -->
+        </div>
+        <!-- RIGHT SIDE SIDEBAR NAVIGATION -->
+        <nav class="st-menu st-effect">
+          <span class="fa fa-times close-sidebar" id="close-sidebar"></span>
+            <table class="table table-cryptic dataTable no-footer" role="grid">
+              <thead>
+                 <tr role="row">
+                    <th colspan="2" rowspan="1">Currency <i class="fa fa-sort"></i></th>
+                    <th class="text-right">Price <i class="fa fa-sort"></i></th>
+                 </tr>
+              </thead>
+               <tbody>
+                  <tr role="row">
+                     <td><span><a href="#"><i class="cc BTC" title="BTC"></i></a></span></td>
+                     <td>
+                        <h6><a href="#" class="d-none d-md-block d-lg-block d-xl-block"> Bitcoin</a></h6>
+                        <small class="text-muted">BTC</small>
+                     </td>
+                     <td class="text-right"><p><span>$</span> 11,723.40</p></td>
+                  </tr>
+                  <tr role="row">
+                     <td><span><a href="#"><i class="cc ETH" title="ETH"></i></a></span></td>
+                     <td>
+                        <h6><a href="#" class="d-none d-md-block d-lg-block d-xl-block"> Ethereum</a></h6>
+                        <small class="text-muted">ETH</small>
+                     </td>
+                     <td class="text-right"><p><span>$</span> 1,070.39</p></td>
+                  </tr>
+                  <tr role="row">
+                     <td><span><a href="#"><i class="cc XRP" title="XRP"></i></a></span></td>
+                     <td>
+                        <h6><a href="#" class="d-none d-md-block d-lg-block d-xl-block"> Ripple</a></h6>
+                        <small class="text-muted">XRP</small>
+                     </td>
+                     <td class="text-right"><p><span>$</span> 1.64</p></td>
+                  </tr>
+                  <tr role="row">
+                     <td><span><a href="#"><i class="cc ADA" title="ADA"></i></a></span></td>
+                     <td>
+                        <h6><a href="#" class="d-none d-md-block d-lg-block d-xl-block"> Cardano</a></h6>
+                        <small class="text-muted">ADA</small>
+                     </td>
+                     <td class="text-right"><p><span>$</span> 0.68</p></td>
+                  </tr>
+                  <tr role="row">
+                     <td><span><a href="#"><i class="cc LTC" title="LTC"></i></a></span></td>
+                     <td>
+                        <h6><a href="#" class="d-none d-md-block d-lg-block d-xl-block"> Litecoin</a></h6>
+                        <small class="text-muted">LTC</small>
+                     </td>
+                     <td class="text-right"><p><span>$</span> 198.88</p></td>
+                  </tr>
+                  <tr role="row">
+                     <td><span><a href="#"><i class="cc XEM" title="XEM"></i></a></span></td>
+                     <td>
+                        <h6><a href="#" class="d-none d-md-block d-lg-block d-xl-block"> NEM</a></h6>
+                        <small class="text-muted">XEM</small>
+                     </td>
+                     <td class="text-right"><p><span>$</span> 1.11</p></td>
+                  </tr>
+               </tbody>
+            </table>
+        </nav>
+      </div>
+    </div>
+    <!-- RIGHT SIDE: SEARCH FORM -->
+    <div class="search search-main">
+      <div id="btn-search-close" class="btn btn--search-close" aria-label="Close search form">
+        <i class="fa fa-times"></i>
+      </div>
+      <form class="search__form" action="https://html.modeltheme.com/kryptunit/search.html">
+        <input class="search__input" name="search" type="search" placeholder="Hash, transactions..." autocomplete="off" autocapitalize="off" spellcheck="false" />
+        <span class="search__info">Hit enter to search or ESC to close</span>
+      </form>
+    </div>
+    <!-- JS SCRIPTS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollbar.min.js"></script>
+    <script src="assets/plugins/modernizr/modernizr.custom.js"></script>
+    <script src="assets/plugins/classie/classie.js"></script>  
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/plugins/dataTables/jquery.dataTables.min.js"></script>
+    <!-- CHARTS -->
+    <script src="assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!-- Custom Charts Scripts -->
+    <script src="assets/js/charts.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="assets/js/custom.min.js"></script>
+      <script src="assets/js/preloader.min.js"></script>
+      <script src="assets/js/service.js"></script>
+      <script src="assets/js/market.js"></script>
+  </body>
+
+</html>

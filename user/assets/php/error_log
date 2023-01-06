@@ -1,0 +1,2 @@
+[29-Oct-2021 18:28:08 UTC] PHP Notice:  Undefined index: front in /home2/coinmaxx/public_html/user/assets/php/sign.php on line 7
+[29-Oct-2021 18:28:08 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home2/coinmaxx/public_html/user/assets/php/sign.php on line 7

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CoinMaxx|Deposit</title>
+    <!-- Favicon icon -->
+
+    <link rel="icon" href="assets/images/coinmaxxlogo.png" type="image/ico" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="vendor/nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="vendor/waves/waves.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+  </head>
+
+  <body>
+    <div id="main-wrapper">
+      <div class="content-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4 class="card-title">Cold Wallet Deposit Address</h4>
+                </div>
+                <div class="card-body" id="deposits">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" data-toggle="tab" href="#tab1"
+                        >BTC</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="tab" href="#tab2">ETH</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                                        <a class="nav-link" data-toggle="tab" href="#tab3">FIAT</a>
+                                    </li> -->
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade show active" id="tab1">
+                      <div class="qrcode">
+                        <img src="assets/images/bitcoin.png" alt="" width="150" />
+                      </div>
+                      <form action="#">
+                        <div class="input-group">
+                          <input 
+                            type="text"
+                            class="form-control"
+                            value="17JvfVd4hoBt8vVkm9eata48EVh2B7rKN7"
+                            id="address1"
+                          />
+                          <div class="input-group-append">
+                            <span class="input-group-text bg-primary text-white"
+                            style="
+                            
+                            cursor: pointer;
+                          " id="copy1">Copy</span
+                            >
+                          </div>
+                          <span
+                            class="input-group-text bg-primary text-white"
+                            style="
+                              background-color: green !important;
+                              cursor: pointer;
+                            "
+                            id="done1"
+                            >Done</span
+                          >
+                        </div>
+                      </form>
+
+                      <ul>
+                        <li>
+                          <i class="mdi mdi-checkbox-blank-circle"></i>
+                          BTC network transfers will be credited to your
+                          CoinMaxx account after 35 network confirmations.
+                        </li>
+                        <li>
+                          <i class="mdi mdi-checkbox-blank-circle"></i>
+                          BTC deposits to this address are unlimited. Note that
+                          you may not be able to withdraw all of your funds at
+                          once if you deposit more than your daily withdrawal
+                          limit.
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="tab-pane fade" id="tab2">
+                      <div class="qrcode">
+                        <img src="assets/images/eth.png" alt="" width="150" />
+                      </div>
+                      <form action="#">
+                        <div class="input-group">
+                          <input
+                            type="text"
+                            class="form-control"
+                            value="0xd20f9341286919234613F45F2D9b83c55C9Df880"
+                            id="address"
+                          />
+                          <div class="input-group-append">
+                            <span class="input-group-text bg-primary text-white" id="copy"  style="
+                            
+                            cursor: pointer;
+                          ">Copy</span>
+                          </div>
+                          <span
+                            class="input-group-text bg-primary text-white"
+                            style="
+                              background-color: green !important;
+                              cursor: pointer;
+                            "
+                            id="done"
+                            >Done</span
+                          >
+                        </div>
+                      </form>
+
+                      <ul>
+                        <li>
+                          <i class="mdi mdi-checkbox-blank-circle"></i>
+                          USDC network transfers will be credited to your Tradio
+                          account after 25 network confirmations.
+                        </li>
+                        <li>
+                          <i class="mdi mdi-checkbox-blank-circle"></i>
+                          USDC deposits to this address are unlimited. Note that
+                          you may not be able to withdraw all of your funds at
+                          once if you deposit more than your daily withdrawal
+                          limit.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer dashboard">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-8 col-12">
+              <div class="copyright">
+                <p>
+                  © Copyright
+                  <script
+                    data-cfasync="false"
+                    src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+                  ></script>
+                  <script>
+                    var CurrentYear = new Date().getFullYear();
+                    document.write(CurrentYear);
+                  </script>
+                  <a href="#">CoinMaxx</a> All Rights Reserved
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-4 col-12">
+              <div class="footer-social">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/global.js"></script>
+ 
+
+    <script src="vendor/waves/waves.min.js"></script>
+
+    <script src="assets/plugins/sweetalert/sweetalert.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/service.js"></script>
+      <script src="assets/js/account.js"></script>
+  </body>
+</html>

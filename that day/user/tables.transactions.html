@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/images/coinmaxxlogo.png" type="image/ico" />
+    <title>CoinMaxx|Transactions</title>
+    <!-- CSS -->
+    <!-- Bootstrap -->
+    <link href="assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/fonts/cryptocoins.css" rel="stylesheet">
+    <!-- Simple line icons -->
+    <link href="assets/css/simple-line-icons.css" rel="stylesheet">
+    <!-- Font awesome icons -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome-animation.min.css" rel="stylesheet">
+    <!-- Custom Style -->
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/media.css" rel="stylesheet">
+    <link id="ui-current-skin" href="assets/css/skin-colors/skin-yellow.css" rel="stylesheet">
+    <!-- Custom Font -->
+    <link rel='stylesheet' type='text/css' media='all' href='https://fonts.googleapis.com/css?family=Montserrat%7CMontserrat%3Aregular%2C700%2Clatin'/>
+  </head>
+  <body class="nav-sm preloader-off developer-mode">
+    <div class="container body">
+      <div class="pace-cover"></div>
+      <div id="st-container" class="st-container st-effect">
+        <div class="main_container">
+          <!-- LEFT PRIMARY NAVIGATION -->
+          <div class="col-md-3 left_col">
+            <div class="scroll-view">
+              <div class="navbar nav_title">
+                <h1 class="logo_wrapper">
+                  <a href="dashboard-v2.html" class="site_logo">
+                    <img class="logo" src="assets/images/coinmaxxlogo.png" alt="cryptic logo">
+                    <span class="logo-text">CoinMaxx</span>
+                  </a>
+                </h1>
+              </div>
+              <div class="clearfix"></div>
+              <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                <div class="menu_section">
+                  <div class="clearfix"></div>
+                  <ul class="nav side-menu">
+                    <li>
+                      <a href="dashboard-v2.html"><i class="icon-home icons"></i> <span>Home</span></a>
+             
+                    </li>
+                   
+                      
+                    </li>
+                   
+                    
+                  </ul>
+                </div>
+                
+                <div class="menu_section">
+                  <h3>Finance</h3>
+                  <ul class="nav side-menu">
+                    
+                    <li><a><i class="icon-grid icons"></i> <span>Investment Plans</span><span class="fa fa-angle-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="pricing-tables-v1.html"><span>Mining</span></a></li>
+                        <li><a href="pricing-tables-v2.html"><span>Trading</span></a></li>
+                      </ul>
+                    </li>
+                    <li><a href="exchange.html"><i class="icon-refresh icons"></i> <span>Withdraw</span></a></li>
+                   
+                    <li><a><i class="icon-chart icons"></i> <span>Financial Reports </span><span class="fa fa-angle-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li><a href="tables.transactions.html"><span>Mining Transactions</span></a></li>
+                        <li><a href="tables.market-capitalizations.html"><span>Market Capitalizations</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="menu_section">
+                  <h3>Personal</h3>
+                  <ul class="nav side-menu">
+                    <li><a href="member-profile.html"><i class="icon-people icons"></i> <span>Profile</span></span></a></li>
+                    <!-- <li><a href="reset-password.html"><i class="icon-lock-open icons"></i> <span>Reset Password</span></a></li>
+                    <li><a href="confirm-mail.html"><i class="icon-lock-open icons"></i> <span>Confirm Registration Mail</span></a></li> -->
+                  </ul>
+                </div>
+              </div>
+              <!-- /sidebar menu -->
+              <!-- /menu footer buttons -->
+              <div class="sidebar-footer hidden-small">
+               
+                <a href="#" id="btnFullscreen">
+                  <span class="icon-size-fullscreen icons" aria-hidden="true"></span>
+                </a>
+               
+                <a href="logout.php">
+                  <span class="icon-power icons" aria-hidden="true"></span>
+                </a>
+              </div>
+              <!-- /menu footer buttons -->
+            </div>
+          </div>
+          <!-- TOP SECONDARY NAVIGATION -->
+          <div class="top_nav">
+            <div class="nav_menu">
+              <ul class="nav navbar-nav navbar-left">
+                <li class="toggle-li">
+                  <div class="nav toggle burger-nav">
+                    <a id="menu_toggle">
+                      <i class="fa fa-bars burger" aria-hidden="true"></i>
+                      <i class="fa fa-long-arrow-right arrow" aria-hidden="true"></i>
+                      <i class="fa fa-times close-menu" aria-hidden="true"></i>
+                      <i class="fa fa-times close-menu-1" aria-hidden="true"></i>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li class="active"><i class="fa fa-chevron-right" aria-hidden="true"></i> Dashboard</li>
+              </ul> <!-- top menu ul -->
+              <ul class="nav navbar-nav navbar-center">
+                
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/images/profile-pic.jpg" alt="">
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="member-profile.html"> Profile</a></li>
+                    <li><a href="logout.php"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- PAGE CONTENT -->
+          <div class="right_col" role="main">
+            <div class="spacer_30"></div>
+            <div class="clearfix"></div>
+            <div class="row chart-section1">
+              <div class="col-md-12">
+                <div class="panel panel-violet table-transactions data_background" data-background='assets/images/panel-background.png'>
+                  <div class="panel-heading no-padding">
+                    <h3 class="no-margin">Recent Blocks</h3>
+                  </div>
+                  <div class="panel-body padding_30">
+                    <table class="table table-purple no-margin">
+                      <thead>
+                        <tr>
+                          <th>Height</th>
+                          <th>Age</th>
+                          <th>Transactions</th>
+                          <th>Total Sent</th>
+                          <th>Total Fees</th>
+                          <th>Block Size (in bytes)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <a href="crypto_address.html">507102</a>
+                          </td>
+                          <td>59&nbsp;seconds ago</td>
+                          <td>2,122</td>
+                          <td>16,819.638 BTC</td>
+                          <td>1.796 BTC</td>
+                          <td>975,573</td>
+                        </tr>
+                      
+                        <tr>
+                          <td>
+                            <a href="crypto_address.html">507101</a>
+                          </td>
+                          <td>10&nbsp;minutes ago</td>
+                          <td>1,807</td>
+                          <td>6,410.154 BTC</td>
+                          <td>0.982 BTC</td>
+                          <td>950,027</td>
+                        </tr>
+                      
+                        <tr>
+                          <td>
+                            <a href="crypto_address.html">507100</a>
+                          </td>
+                          <td>13&nbsp;minutes ago</td>
+                          <td>1,980</td>
+                          <td>16,541.708 BTC</td>
+                          <td>1.855 BTC</td>
+                          <td>974,440</td>
+                        </tr>
+                      
+                        <tr>
+                          <td>
+                            <a href="crypto_address.html">507099</a>
+                          </td>
+                          <td>21&nbsp;minutes ago</td>
+                          <td>1,781</td>
+                          <td>12,009.855 BTC</td>
+                          <td>1.963 BTC</td>
+                          <td>975,484</td>
+                        </tr>
+                      
+                        <tr>
+                          <td>
+                            <a href="crypto_address.html">507098</a>
+                          </td>
+                          <td>31&nbsp;minutes ago</td>
+                          <td>1,590</td>
+                          <td>8,166.284 BTC</td>
+                          <td>1.923 BTC</td>
+                          <td>984,979</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="row">
+              <div class="col-md-12">
+                <div class="panel panel-blue table-transactions data_background" data-background='assets/images/panel-background.png'>
+                  <div class="panel-heading no-padding">
+                    <h3 class="no-margin">Latest Transactions</h3>
+                  </div>
+                  <div class="panel-body padding_30">
+                    <table class="table table-blue no-margin">
+                      <thead>
+                        <tr id="latest-txs">
+                          <th>Transaction Hash</th>
+                          <th>BTC</th>
+                          <th>Time</th>
+                          <th>Miner Preference</th>
+                          <th>Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>  
+                        <tr class="new-tx">
+                          <td>
+                            <a href="search.html">
+                              8d2c7b06afa0
+                            </a>
+                            ...
+                          </td>
+                          <td>0.0126281 BTC</td>
+                          <td>
+                            <time class="timeago" datetime="2018-02-01T13:38:01Z" title="2018-02-01 13:38 GMT">2 minutes ago</time>
+                          </td>
+                          <td>medium</td>
+                          <td><span class="label label-success">Confirmed</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="search.html">
+                              7de67405bfc6
+                            </a>
+                            ...
+                          </td>
+                          <td>0.00522881 BTC</td>
+                          <td>
+                            <time class="timeago" datetime="2018-02-01T13:38:01Z" title="2018-02-01 13:38 GMT">2 minutes ago</time>
+                          </td>
+                          <td>high</td>
+                          <td><span class="label label-warning">Unconfirmed</span></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <a href="search.html">
+                              783de15b0cec
+                            </a>
+                            ...
+                          </td>
+                          <td>0.00622033 BTC</td>
+                          <td>
+                            <time class="timeago" datetime="2018-02-01T13:38:01Z" title="2018-02-01 13:38 GMT">2 minutes ago</time>
+                          </td>
+                          <td>high</td>
+                          <td><span class="label label-success">Confirmed</span></td>
+                        </tr>
+                        <tr class="new-tx">
+                          <td>
+                            <a href="search.html">
+                              9793bcfa5f7f
+                            </a>
+                            ...
+                          </td>
+                          <td>5.43670578 BTC</td>
+                          <td>
+                            <time class="timeago" datetime="2018-02-01T13:38:00Z" title="2018-02-01 13:38 GMT">2 minutes ago</time>
+                          </td>
+                          <td>high</td>
+                          <td><span class="label label-danger">Canceled</span></td>
+                        </tr>
+                        <tr class="new-tx">
+                          <td>
+                            <a href="search.html">
+                              3c66087926b5
+                            </a>
+                            ...
+                          </td>
+                          <td>13.01099978 BTC</td>
+                          <td>
+                            <time class="timeago" datetime="2018-02-01T13:38:00Z" title="2018-02-01 13:38 GMT">2 minutes ago</time>
+                          </td>
+                          <td>high</td>
+                          <td><span class="label label-danger">Canceled</span></td>
+                        </tr>
+                        <tr class="new-tx">
+                          <td>
+                            <a href="search.html">
+                              58935e53c894
+                            </a>
+                            ...
+                          </td>
+                          <td>0.0024534 BTC</td>
+                          <td>
+                            <time class="timeago" datetime="2018-02-01T13:38:00Z" title="2018-02-01 13:38 GMT">2 minutes ago</time>
+                          </td>
+                          <td>high</td>
+                          <td><span class="label label-warning">Unconfirmed</span></td>
+                        </tr>
+                        <tr class="new-tx">
+                          <td>
+                            <a href="search.html">
+                              b3976b76cf5e
+                            </a>
+                            ...
+                          </td>
+                          <td>0.00518486 BTC</td>
+                          <td>
+                            <time class="timeago" datetime="2018-02-01T13:37:59Z" title="2018-02-01 13:37 GMT">2 minutes ago</time>
+                          </td>
+                          <td>medium</td>
+                          <td><span class="label label-success">Confirmed</span></td>
+                        </tr>
+                        <tr class="new-tx">
+                          <td>
+                            <a href="search.html">
+                              d011cb78c078
+                            </a>
+                            ...
+                          </td>
+                          <td>0.08039395 BTC</td>
+                          <td>
+                            <time class="timeago" datetime="2018-02-01T13:37:59Z" title="2018-02-01 13:37 GMT">2 minutes ago</time>
+                          </td>
+                          <td>high</td>
+                          <td><span class="label label-success">Confirmed</span></td>
+                        </tr>
+                        <tr class="new-tx">
+                          <td>
+                            <a href="search.html">
+                              b6b59368335c
+                            </a>
+                            ...
+                          </td>
+                          <td>47.99698306 BTC</td>
+                          <td>
+                            <time class="timeago" datetime="2018-02-01T13:37:58Z" title="2018-02-01 13:37 GMT">2 minutes ago</time>
+                          </td>
+                          <td>high</td>
+                          <td><span class="label label-success">Confirmed</span></td>
+                        </tr>
+                        <tr class="new-tx">
+                          <td>
+                            <a href="search.html">
+                              d261fb1d717d
+                            </a>
+                            ...
+                          </td>
+                          <td>0.0281818 BTC</td>
+                          <td>
+                            <time class="timeago" datetime="2018-02-01T13:37:58Z" title="2018-02-01 13:37 GMT">2 minutes ago</time>
+                          </td>
+                          <td>high</td>
+                          <td><span class="label label-danger">Canceled</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="panel panel-violet tables-crypto-stats data_background" data-background='assets/images/panel-background.png'>
+                  <div class="panel-heading no-padding">
+                    <h3 class="no-margin">Block Summary</h3>
+                  </div>
+                  <div class="panel-body padding_30">
+                    <table class="table table-purple no-margin">
+                      <tbody>
+                        <tr>
+                          <td>Blocks Mined</td>
+                          <td>131</td>
+                        </tr>
+                        <tr>
+                          <td>Time Between Blocks</td>
+                          <td>10.46 minutes</td>
+                        </tr>
+                        <tr>
+                          <td>Bitcoins Mined</td>
+                          <td>1,637.50000000 BTC</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="panel panel-blue tables-crypto-stats data_background" data-background='assets/images/panel-background.png'>
+                  <div class="panel-heading no-padding">
+                    <h3 class="no-margin">Market Summary</h3>
+                  </div>
+                  <div class="panel-body padding_30">
+                    <table class="table table-blue no-margin">
+                      <tbody>
+                        <tr>
+                          <td>Market Price</td>
+                          <td>$9,331.37</td>
+                          <td><a href="candlestick-charts.html">View Chart</a></td>
+                        </tr>
+                        <tr>
+                          <td>Trade Volume</td>
+                          <td>$948,864,760.27</td>
+                          <td><a href="candlestick-charts.html">View Chart</a></td>
+                        </tr>
+                        <tr>
+                          <td>Trade Volume</td>
+                          <td>101,000.32893873 BTC</td>
+                          <td><a href="candlestick-charts.html">View Chart</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="panel panel-green tables-crypto-stats data_background" data-background='assets/images/panel-background.png'>
+                  <div class="panel-heading no-padding">
+                    <h3 class="no-margin">Mining Cost</h3>
+                  </div>
+                  <div class="panel-body padding_30">
+                    <table class="table table-green no-margin">
+                      <tbody>
+                        <tr>
+                          <td>Total Miners Revenue (USD)</td>
+                          <td>$16,727,645.97</td>
+                          <td><a href="candlestick-charts.html">View Chart</a></td>
+                        </tr>
+                        <tr>
+                          <td>% earned from transaction fees</td>
+                          <td>10.07%</td>
+                          <td><a href="candlestick-charts.html">View Chart</a></td>
+                        </tr>
+                        <tr>
+                          <td>% of transaction volume</td>
+                          <td>0.99%</td>
+                          <td><a href="candlestick-charts.html">View Chart</a></td>
+                        </tr>
+                        <tr>
+                          <td>Cost per Transaction (USD)</td>
+                          <td>$77.39</td>
+                          <td><a href="candlestick-charts.html">View Chart</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">  
+              <div class="col-md-12">
+                <div class="panel panel-gray tables-crypto-stats data_background no-margin" data-background='assets/images/panel-background.png'>
+                  <div class="panel-heading no-padding">
+                    <h3 class="no-margin">Transaction Summary</h3>
+                  </div>
+                  <div class="panel-body padding_30">
+                    <table class="table table-gray no-margin">
+                      <tbody>
+                        <tr>
+                          <td>Total Transaction Fees (BTC)</td>
+                          <td>185.24635681 BTC</td>
+                          <td><a href="candlestick-charts.html">View Chart</a></td>
+                        </tr>
+                        <tr>
+                          <td>Number of Transactions</td>
+                          <td>220,151</td>
+                          <td><a href="candlestick-charts.html">View Chart</a></td>
+                        </tr>
+                        <tr>
+                          <td>Total Output Volume (BTC)</td>
+                          <td>2,146,040.93977668 BTC</td>
+                          <td><a href="candlestick-charts.html">View Chart</a></td>
+                        </tr>
+                        <tr>
+                          <td>Estimated Transaction Volume (BTC)</td>
+                          <td>187,140.26960632 BTC</td>
+                          <td><a href="candlestick-charts.html">View Chart</a></td>
+                        </tr>
+                        <tr>
+                          <td>Estimated Transaction Volume (USD)</td>
+                          <td>$1,758,121,076.66</td>
+                          <td><a href="candlestick-charts.html">View Chart</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="scrollToTop"><i class="fa fa-chevron-up text-white" aria-hidden="true"></i></a>
+          </div>
+          <!-- PAGE FOOTER -->
+          <footer>
+            <div class="pull-right">
+              Copyrights @ <a href="#">CoinMaxx 2019-2021</a>
+            </div>
+            <div class="clearfix"></div>
+          </footer>
+        </div>
+        <!-- RIGHT SIDE SIDEBAR NAVIGATION -->
+        
+      </div>
+    </div>
+    <!-- RIGHT SIDE: SEARCH FORM -->
+   
+    <!-- JS SCRIPTS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollbar.min.js"></script>
+    <script src="assets/plugins/modernizr/modernizr.custom.js"></script>
+    <script src="assets/plugins/classie/classie.js"></script>  
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="assets/js/custom.min.js"></script>
+    <script src="assets/js/preloader.min.js"></script>
+    <script src="assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script src="assets/plugins/dataTables/jquery.dataTables.min.js"></script>
+  </body>
+
+</html>

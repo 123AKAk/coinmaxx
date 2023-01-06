@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+ 
+  <body>
+    <div class="blindspot"></div>
+
+    <div class="alert"></div>
+
+    <div class="formbody">
+        <div class="formform f1">
+          <h2>Admin Login</h2>
+        <form action="">
+          <label>Email</label>
+          <input type="text" name="" id="email" placeholder="Email" />
+          <label>Password</label>
+          <input type="password" name="" id="pass" placeholder="Password" />
+          <div class="radiodivv">
+            <button id="submit">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <form action="connectuser.php" method="post" hidden>
+      <input type="text" id="userp" name="u" />
+      <input type="password" id="passp" name="p" />
+      <input type="text" id="where" name="where" />
+      <input type="submit" id="sub" name="btn" />
+    </form>
+    <!-- javascript links -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/login.js"></script>
+  </body>
+</html>

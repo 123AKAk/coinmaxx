@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+
+<head>
+		<meta charset="UTF-8">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="assets/images/coinmaxxlogo.png" type="image/ico" />
+		<title>CoinMaxx|Register</title>
+		<!-- CSS -->
+		<!-- Bootstrap -->
+		<link href="assets/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/plugins/dataTables/jquery.dataTables.min.css" rel="stylesheet">
+		<!-- Simple line icons -->
+		<link href="assets/css/simple-line-icons.css" rel="stylesheet">
+    <link href="assets/fonts/cryptocoins.css" rel="stylesheet">
+    <!-- Font awesome icons -->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/font-awesome-animation.min.css" rel="stylesheet">
+		<!-- Custom Style -->
+		<link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/media.css" rel="stylesheet">
+    <link id="ui-current-skin" href="assets/css/skin-colors/skin-yellow.css" rel="stylesheet">
+    <!-- Custom Font -->
+    <link rel='stylesheet' type='text/css' media='all' href='https://fonts.googleapis.com/css?family=Montserrat%7CMontserrat%3Aregular%2C700%2Clatin'/>
+	</head>
+  <body class="nav-sm preloader-off developer-mode register-page-v2">
+    <div class="pace-cover"></div>
+    <div id="st-container" class="st-container st-effect">
+      <!-- MAIN PAGE CONTAINER -->
+      <div class="container body">
+        <div class="main_container">
+          <!-- LEFT PRIMARY NAVIGATION -->
+
+          </div>
+          <!-- PAGE CONTENT -->
+          <div class="clearfix"></div>
+          <div class="right_col right_col_exchange" style="margin-left:0px;" role="main">
+
+            <div class="pannel-landing-page data_background text-center"  data-background="assets/images/countdown-background.png">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 col-lg-12  content-1">
+                    <div class="panel panel-default data_background element-box-shadow register-v2" data-background="assets/images/background_register.png">
+                      <div class="panel-heading text-left padding_30"><h3 class="no-margin text-bold">Personal Details</h3></div>
+                      <div class="panel-body" id="stepper-page">
+                        <div class="stepper stepper-register">
+                          <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                              <a class="persistant-disabled" href="#stepper-reg-1" data-toggle="tab" aria-controls="stepper-reg-1" role="tab" title="Step 1">
+                                <span class="round-tab">1</span>
+                              </a>
+                              <p class="text-bold text-white">Personal Details</p>
+                            </li>
+                            <li role="presentation" class="disabled">
+                              <a class="persistant-disabled" href="#stepper-reg-2" data-toggle="tab" aria-controls="stepper-reg-2" role="tab" title="Step 2">
+                                <span class="round-tab">2</span>
+                              </a>
+                              <p class="text-bold text-white">KYC Verification</p>
+                            </li>
+                            <li role="presentation" class="disabled">
+                              <a class="persistant-disabled" href="#stepper-reg-3" data-toggle="tab" aria-controls="stepper-reg-3" role="tab" title="Complete">
+                                <span class="round-tab">3</span>
+                              </a>
+                              <p class="text-bold text-white">Account Setup</p>
+                            </li>
+                          </ul>
+                          <form>
+                            <div class="tab-content">
+                              <div class="tab-pane fade in active" role="tabpanel" id="stepper-reg-1">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <label class="text-bold text-white"><b>Full Name</b></label><br>
+                                    <input type="text" placeholder="Insert full name" id="fullname" required>
+                                  </div>
+                                  <div class="col-md-12">
+                                    <label class="text-bold text-white"><b>Username or Email Address</b></label><br>
+                                    <input type="text" placeholder="Insert Email Address" id="email" required>
+                                  </div>
+                                  <div class="col-md-12">
+                                    <ul class="list-inline">
+                                      <li>
+                                        <a class="btn btn-cryptic text-bold" style="background: gray;width: 100%; cursor: not-allowed;" id="n1">Next Step</a>
+                                        <a class="btn btn-cryptic next-step text-bold"  id="n2" style="display: none;">Next Step</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" role="tabpanel" id="stepper-reg-2">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <label class="text-bold text-white"><b>Social Security Number(SSN)</b></label><br>
+                                    <input type="text" placeholder="Insert Social Security Number" id="ssn" required>
+                                  </div>
+                                  <div class="col-md-12">
+                                    <label class="text-bold text-white"><b>Valid ID Card Front</b></label><br>
+                                    <input type="file" placeholder="Insert Valid ID card" id="front" required >
+                                    <label class="text-bold text-white"><b>Valid ID Card Back</b></label><br>
+                                    <input type="file" placeholder="Insert Valid ID card" id="back" required>
+                                  </div>
+                                  <div class="col-md-12">
+                                    <ul class="list-inline">
+                                      <li>
+                                        <a class="btn btn-info prev-step text-bold">Back</a>
+                                      </li> 
+                                      <li>
+                                        <a class="btn btn-cryptic next-step text-bold" style="background: gray;width: 100%; cursor: not-allowed;" id="ssn1">Next Step</a>
+                                        <a class="btn btn-cryptic next-step text-bold" id="ssn2" style="display: none;">Next Step</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="tab-pane fade" role="tabpanel" id="stepper-reg-3">
+                                <label class="text-bold text-white"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" id="psw" required>
+                                <label class="text-bold text-white"><b>Repeat Password</b></label>
+                                <input type="password" placeholder="Repeat Password" id="psw-repeat" required>
+                                
+                                <label class="text-bold text-white">
+                                  <input type="checkbox" checked="checked" id="t&c">Accept terms & conditions
+                                </label>
+                                <div class="spacer_15"></div>
+                                <ul class="list-inline">
+                                  <li>
+                                    <button class="btn btn-cryptic next-step text-bold" id="account">CREATE ACCOUNT</button>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="scrollToTop"><i class="fa fa-chevron-up text-white" aria-hidden="true"></i></a>
+          </div>
+          <!-- PAGE FOOTER -->
+          
+        </div>
+        <!-- RIGHT SIDE SIDEBAR NAVIGATION -->
+       
+      </div>
+      <!-- RIGHT SIDE: SEARCH FORM -->
+      <!-- <div class="search search-main">
+        <div id="btn-search-close" class="btn btn--search-close" aria-label="Close search form">
+          <i class="fa fa-times"></i>
+        </div>
+        <form class="search__form" action="https://html.modeltheme.com/kryptunit/search.html">
+          <input class="search__input" name="search" type="search" placeholder="Hash, transactions..." autocomplete="off" autocapitalize="off" spellcheck="false" />
+          <span class="search__info">Hit enter to search or ESC to close</span>
+        </form>
+      </div> -->
+
+      <form action="connectuserr.php" method="post" hidden>
+        <input type="text" id="userp" name="u" />
+        <input type="password" id="passp" name="p" />
+        <input type="text" id="where" name="where" />
+        <input type="submit" id="subb" name="btn" />
+      </form>
+      <!-- JS SCRIPTS -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/plugins/sweetalert/sweetalert.min.js"></script>
+      
+      <script src="assets/js/service.js"></script>
+      <script src="assets/js/register.js"></script>
+      <script src="assets/js/jquery.scrollbar.min.js"></script>
+      <script src="assets/plugins/modernizr/modernizr.custom.js"></script>
+      <script src="assets/plugins/classie/classie.js"></script>  
+      <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+      <script src="assets/plugins/dataTables/jquery.dataTables.min.js"></script>
+      <script src="assets/plugins/flipclock/flipclock.js"></script>
+      <!-- Custom Theme Scripts -->
+      <script src="assets/js/custom.min.js"></script>
+      <script src="assets/js/preloader.min.js"></script>
+    </div>
+  </body>
+
+
+</html>
